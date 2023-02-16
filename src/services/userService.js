@@ -1,5 +1,5 @@
 async function fetchAllUsers(){
-    const response = await fetch('http://localhost:3000/message/')
+    const response = await fetch(import.meta.env.VITE_BACKEND+'/message/')
     const json = await response.json()
     return json
 }
